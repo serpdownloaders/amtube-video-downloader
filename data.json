@@ -1,0 +1,223 @@
+{
+  "github_source_repo": "https://github.com/serpcompany/amtube-downloader",
+  "serply_link": "https://serp.ly/amtube-downloader",
+  "app_name": "Amtube Video Downloader",
+  "short_description": "Download & Save Amtube Videos Easily for Offline Viewing (Browser Extension)",
+  "long_description": "A browser extension candidate for AM Tube-branded pages that run on adver-media.com. Open a supported video page, start playback if needed, then use the in-page player button or extension controls to capture exposed media candidates. The extension works across a broad network of external media hosts, making it suitable for the complex media routing that AM Tube pages often use.",
+  "main_video": "",
+  "featured_image": "",
+  "screenshots": [
+    "https://apps.serp.co/media/optimized-products/amtube-downloader-fullscreen-01-de6367c17e.webp",
+    "https://apps.serp.co/media/optimized-products/amtube-downloader-fullscreen-02-4ea9a873f7.webp",
+    "https://apps.serp.co/media/optimized-products/amtube-downloader-fullscreen-03-0b29a28258.webp",
+    "https://apps.serp.co/media/optimized-products/amtube-downloader-fullscreen-04-e010594394.webp"
+  ],
+  "chromestore_link": "",
+  "firefoxstore_link": "",
+  "other_links": [],
+  "faqs": [
+    {
+      "question": "Why is this called Amtube if the page URL is on adver-media.com?",
+      "answer": "The AM Tube brand is presented through adver-media.com runtime URLs. This pairing is part of the extension's candidate profile and may change as the platform evolves."
+    },
+    {
+      "question": "Which pages are directly matched?",
+      "answer": "The extension matches adver-media.com and www.adver-media.com over both HTTP and HTTPS."
+    },
+    {
+      "question": "Which extra hosts are in scope?",
+      "answer": "The permission mesh includes a broad range of external media hosts that AM Tube pages commonly use for video delivery."
+    },
+    {
+      "question": "What does the extension look for?",
+      "answer": "It checks direct video tags, Open Graph video metadata, and Twitter player stream references on supported pages."
+    },
+    {
+      "question": "Is this release-ready?",
+      "answer": "No. The extension is still a candidate with probe-rejected status and uses generated detection stubs that need real extraction review before a stable release can be claimed."
+    },
+    {
+      "question": "Is it released anywhere?",
+      "answer": "The extension is available through GitHub Releases but has not been published to official browser stores yet."
+    }
+  ],
+  "permissions": [
+    {
+      "name": "",
+      "description": "Broad external-host permission coverage for complex media routing"
+    },
+    {
+      "name": "",
+      "description": "The permission mesh includes a broad range of external media hosts that AM Tube pages commonly use for video delivery."
+    },
+    {
+      "name": "",
+      "description": "Only download content you own or have explicit permission to save"
+    }
+  ],
+  "features": [
+    "Detect media from video tags and metadata on AM Tube-branded pages",
+    "Use an in-page player button instead of hunting through source code",
+    "Works across a wide range of external media hosts",
+    "Save exposed streams directly through your browser",
+    "Includes 3 free downloads to test the workflow first",
+    "AM Tube-focused detection on adver-media.com video pages",
+    "In-page player button attached to the video container",
+    "Detection from direct video tags and metadata-backed stream references",
+    "Broad external-host permission coverage for complex media routing",
+    "Offscreen download handling with AM Tube folder defaults",
+    "Context menu support for quick access to download options",
+    "Desktop notifications for download status updates",
+    "Works across HTTP and HTTPS page variants",
+    "Transparent candidate status with clear readiness information",
+    "3 free downloads included for testing"
+  ],
+  "content": {
+    "why": [
+      "AM Tube-branded video pages on adver-media.com often route playback through multiple external media hosts, making it difficult to save videos directly. The standard browser save options rarely expose the final media URL, and generic downloader tools can miss metadata-backed streams entirely.",
+      "This extension is built for exactly that kind of messy browser-side media hunt. Instead of requiring you to manually track down source URLs across a chain of third-party hosts, it detects exposed media candidates right from the page you are viewing. The player button attaches directly to the video container, so you do not need to dig through code or switch between tabs to find what you want to save."
+    ],
+    "how_it_works": [
+      "Install the extension from the latest release.",
+      "Open Amtube and go to a supported video page.",
+      "Start playback so the extension can detect the media.",
+      "Open the popup or use the on-page controls.",
+      "Choose the quality option you want.",
+      "Start the download and wait for the MP4 export to finish.",
+      "Save the final file locally."
+    ],
+    "tutorial": [
+      "Open your browser and install the Amtube Downloader extension from the latest GitHub release.",
+      "Navigate to an AM Tube-branded video page on adver-media.com.",
+      "Wait for the page to load completely, including any embedded media players.",
+      "Press the play button on the video if media is not detected immediately.",
+      "Look for the Amtube player button attached to the video container.",
+      "Click the button or open the extension popup to see detected media candidates.",
+      "Select the quality option you want from the available choices.",
+      "Click download and save the MP4 file to your preferred location."
+    ],
+    "supported_formats": [
+      "Input: Video streams exposed through page video tags, metadata references, or approved external media hosts on adver-media.com",
+      "Output: MP4",
+      "Saved files use MP4 so they are easier to replay on standard media players, move between devices, or archive locally."
+    ],
+    "target_users": [
+      "Users who want to save AM Tube videos from adver-media.com",
+      "Anyone who prefers page-level controls over manual source hunting",
+      "Users who encounter complex media routing across multiple hosts",
+      "People who want a browser-based workflow instead of generic downloader sites"
+    ],
+    "use_cases": [
+      "Save a video from an AM Tube-branded page on adver-media.com",
+      "Detect media surfaced through the page player or page metadata",
+      "Use an in-player button instead of digging through source code",
+      "Work through messy host handoffs without leaving the browser",
+      "Evaluate a target-verified candidate while keeping release-readiness expectations cautious"
+    ],
+    "troubleshooting": [
+      "No media detected after opening a page Start video playback first. Some pages only expose media streams after the player begins buffering.",
+      "The player button does not appear Make sure you are on a supported adver-media.com page. The button attaches to the video container, so the page must load fully.",
+      "Download fails or produces a broken file Try a different quality option if available. Some external hosts may serve streams that require a specific referer or origin header.",
+      "The extension does not work on some pages Not all pages on adver-media.com may expose media through the supported detection methods. Try refreshing the page and starting playback again.",
+      "Getting probe-rejected or low-confidence messages This extension is still a candidate and may not work reliably on all pages. Real extraction review is pending, so treat results as experimental."
+    ],
+    "trial_access": [
+      "Includes 3 free downloads so you can test the workflow first",
+      "Email sign-in uses secure one-time password verification",
+      "No credit card required for the trial",
+      "Unlimited downloads are available with a paid license"
+    ],
+    "installation_instructions": [
+      "Open the latest release page.",
+      "Download the correct build for your browser.",
+      "Install the extension.",
+      "Open a supported Amtube page.",
+      "Use the popup to detect and download the media."
+    ],
+    "notes": [
+      "Only download content you own or have explicit permission to save",
+      "An internet connection is required for downloads",
+      "The AM Tube brand is presented through adver-media.com runtime URLs, not an amtube.com domain",
+      "This extension is still a candidate and may not work reliably on all pages"
+    ],
+    "about": [
+      "AM Tube is a video platform that hosts adult content on adver-media.com. The Amtube Downloader extension helps users save videos from this platform directly in their browser without needing external tools or manual source tracking."
+    ]
+  },
+  "serpx_link": "https://serpx.link/amtube-downloader",
+  "github_topics": [
+    "amtube-download",
+    "amtube-downloader",
+    "amtube-video-downloader",
+    "amtube-video-downloader-online",
+    "amtube-video-downloader-mac",
+    "amtube-video-downloader-window",
+    "amtube-video-downloader-free",
+    "amtube-video-downloader-extension",
+    "amtube-video-downloader-app",
+    "amtube-video-downloader-chrome",
+    "amtube-video-downloader-from-url",
+    "how-to-download-amtube-videos",
+    "how-to-download-amtube-videos-mac",
+    "how-to-download-amtube-videos-windows",
+    "how-to-download-amtube-videos-online",
+    "how-to-download-amtube-videos-free",
+    "how-to-download-from-amtube",
+    "how-to-download-videos-from-amtube",
+    "download-amtube-videos",
+    "amtube-video-tutorial",
+    "save-amtube-videos",
+    "amtube-video-content-saver",
+    "how-to-download-amtube-videos-for-free"
+  ],
+  "hashtags": [
+    "#AmtubeDownload",
+    "#AmtubeDownloader",
+    "#AmtubeVideoDownloader",
+    "#AmtubeVideoDownloaderOnline",
+    "#AmtubeVideoDownloaderMac",
+    "#AmtubeVideoDownloaderWindow",
+    "#AmtubeVideoDownloaderFree",
+    "#AmtubeVideoDownloaderExtension",
+    "#AmtubeVideoDownloaderApp",
+    "#AmtubeVideoDownloaderChrome",
+    "#AmtubeVideoDownloaderFromURL",
+    "#HowToDownloadAmtubeVideos",
+    "#HowToDownloadAmtubeVideosMac",
+    "#HowToDownloadAmtubeVideosWindows",
+    "#HowToDownloadAmtubeVideosOnline",
+    "#HowToDownloadAmtubeVideosFree",
+    "#HowToDownloadFromAmtube",
+    "#HowToDownloadVideosFromAmtube",
+    "#DownloadAmtubeVideos",
+    "#AmtubeVideoTutorial",
+    "#SaveAmtubeVideos",
+    "#AmtubeVideoContentSaver",
+    "#HowToDownloadAmtubeVideosForFree"
+  ],
+  "youtube_tags": [
+    "Amtube Download",
+    "Amtube Downloader",
+    "Amtube Video Downloader",
+    "Amtube Video Downloader Online",
+    "Amtube Video Downloader Mac",
+    "Amtube Video Downloader Window",
+    "Amtube Video Downloader Free",
+    "Amtube Video Downloader Extension",
+    "Amtube Video Downloader App",
+    "Amtube Video Downloader Chrome",
+    "Amtube Video Downloader From URL",
+    "How To Download Amtube Videos",
+    "How To Download Amtube Videos Mac",
+    "How To Download Amtube Videos Windows",
+    "How To Download Amtube Videos Online",
+    "How To Download Amtube Videos Free",
+    "How To Download From Amtube",
+    "How To Download Videos From Amtube",
+    "Download Amtube Videos",
+    "Amtube Video Tutorial",
+    "Save Amtube Videos",
+    "Amtube Video Content Saver",
+    "How To Download Amtube Videos For Free"
+  ]
+}
